@@ -118,7 +118,7 @@ There are many tutorials and references for Julia, including a [basics overview 
 
 It will often be helpful to include nicely-formatted mathematics in a notebook. Markdown accomodates this using LaTeX syntax. A LaTeX cheatsheet is available on the class website, and many other guides exist online. 
 
-Below is an example of a formatted equation: $$x = 5$$.
+Below is an example of a formatted equation: $$x = 5.$$
 
 ### Looking For Help
 
@@ -141,7 +141,7 @@ Use your understanding of Julia syntax to complete the following (hopefully shor
 
 ### Exercise 1
 
-Given two numeric arrays `x` and `y`, write a function to compute their dot product if they have equal length, and return an error if not (this is useful for debugging!). Use the following code as a starting point.
+Given two numeric arrays `x` and `y`, write a function to compute their dot product if they have equal length, and return an error if not (this is useful for debugging!). Use the following code as a starting point. 
 
 ```{julia}
 #| eval: false
@@ -153,6 +153,20 @@ function dot_product(x, y)
         throw(DimensionMismatch("length of x not equal to length of y"))
     end
 end
+```
+
+Here are some tests to make sure your code works as intended. Tests like these are useful to make sure everything works as intended. One reason to split your code up into functions is that it makes it straightforward to write tests to make sure each piece of your code works, which makes it easier to identify where errors are occuring.
+
+```{julia}
+#| eval: false
+
+dot_product([1 2 3], [4 5 6])
+```
+
+```{julia}
+#| eval: false
+
+dot_product([1 2 3], [4 5])
 ```
 
 ### Exercise 2
@@ -169,7 +183,19 @@ Given $x > 0:
 4. Repeat until $x/a$ is within a tolerance of $\varepsilon$ from $a$.
 5. Return $a \approx \sqrt{x}$.
 
+```{julia}
+#| eval: false
+# insert your code here
+
+```
+
 Use your `newton_sqrt` function to compute $\sqrt{2}$ to within a tolerance of $\varepsilon = 0.01$.
+
+```{julia}
+#| eval: false
+# insert your code here
+
+```
 
 ### Exercise 3: Making a Plot
 
