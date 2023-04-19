@@ -13,7 +13,6 @@ format:
         code-annotation: below
 jupyter: julia-1.8
 format-links: [pdf]
-freeze: false
 ---
 
 ::: {.content-visible when-format="ipynb"}
@@ -163,6 +162,14 @@ Here are some tests to make sure your code works as intended. Tests like these a
 dot_product([1 2 3], [4 5 6])
 ```
 
+If you know the value you should get, you can write a more formal test using the `@assert` macro, which is a good way to "automate" checking (since you get an obvious error if the code doesn't work as desired):
+```{julia}
+#| eval: false
+
+@assert dot_product([1 2 3], [4 5 6]) == 32
+```
+
+Let's also make sure we get an error when the dimensions of the two vectors don't match:
 ```{julia}
 #| eval: false
 
@@ -175,7 +182,7 @@ This problem involves implementing Newton's method for computing square roots; i
 
 Implement the following algorithm in a function `newton_sqrt`:
 
-Given $x > 0:
+Given $x > 0$:
 
 1. Take a guess $a$.
 2. Divide $x$ by $a$.  
