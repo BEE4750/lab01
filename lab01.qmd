@@ -39,6 +39,27 @@ Otherwise, you can [find the Github repository here]({{< var github_org.repo >}}
 
 :::
 
+## Setup
+
+The following code should go at the top of most Julia scripts; it will load the local package environment and install any needed packages. You will see this often and shouldn't need to touch it.
+
+```{julia}
+#| output: false
+
+import Pkg
+Pkg.activate(".")
+Pkg.instantiate()
+```
+
+This next cell loads packages which are required for the rest of the code evaluation. In this case, we only need to load the `Plots.jl` plotting package, but you will see others over the course of the semester (and can add more if desired; just make sure that you've [added the new packages to the environment](https://viveks.me/environmental-systems-analysis/tutorials/julia-basics.html#package-management)). Standard Julia practice is to load all of the needed packages at the top of the file.
+
+```{julia}
+#| output: false
+
+using Plots
+```
+
+
 ## Introduction
 
 ### Julia
