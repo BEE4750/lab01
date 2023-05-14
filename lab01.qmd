@@ -11,7 +11,7 @@ format:
         warning: true
         error: true
         code-annotation: below
-jupyter: julia-1.8
+jupyter: julia-1.9
 format-links: [pdf]
 ---
 
@@ -235,3 +235,19 @@ Write a function to compute the square of an integer `x`. Evaluate this function
 
 ```
 
+## Export the Notebook 
+
+The last step is to export the notebook for submission to Gradescope (this section won't be repeated going forward, but the steps are the same).
+
+You should see the following menu bar at the top of the VS Code window:
+![Notebook Menu Bar](figures/vs-code-top-bar.png)
+
+1. Click "Run All" at the top to execute all of the cells in order. **Please do not forget to do this before exporting and submitting or you may lose points because your code has not been executed or may have errors**.
+2. Click the ellipsis ("...") and select "Export". If you have LaTeX installed, you can click "PDF"; otherwise, click "HTML." Save the file, and then when prompted, open the file. This should open the page in your browser; go to the print interface and save as a PDF.
+::: {.callout-tip}
+When printing to PDF, long lines will run off the edge of code cells, which may result in comments or code being hidden. If you see this, go back to the notebook and break up long lines into shorter onces (for example, see the comment in the above code cell) to ensure key parts of your results aren't missing.
+:::
+
+Great! That's the basic workflow for every assignment in this course. 
+
+Now you have your PDF that you can submit to Gradescope. Make sure that you tag pages corresponding to relevant problems to avoid a 10% penalty.
