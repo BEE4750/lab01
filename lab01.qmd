@@ -66,9 +66,9 @@ using Plots
 
 Julia is an up-and-coming language, originally developed for scientific programming. While learning a new programming language always has its hiccups, the good news is that if you've programmed in a high-level language such as Python or MATLAB, most Julia concepts should look familiar.
 
-If you have not successfully set up Julia, follow the instructions in [Application Exercise 1](ae/ae-01-setup.html) and/or ask for help.
+If you have not successfully set up Julia, follow the instructions in [Tools Setup](https://viveks.me/environmental-systems-analysis/setup.html) and/or ask for help.
 
-You can use other editors for this course, but our recommendation is [Visual Studio Code](https://code.visualstudio.com/) with the [Julia extension](https://marketplace.visualstudio.com/items?itemName=julialang.language-julia), which will make life a *lot* simpler! You should have set this up as part of [Application Exercise 1](ae/ae-01-setup.html), but if not, do so now and/or ask for help.
+You can use other editors for this course, but our recommendation is [Visual Studio Code](https://code.visualstudio.com/) with the [Julia extension](https://marketplace.visualstudio.com/items?itemName=julialang.language-julia), which will make life a *lot* simpler! You should have set this up by following the [Tools Setup](https://viveks.me/environmental-systems-analysis/setup.html) instructions, but if not, do so now and/or ask for help.
 
 ### Jupyter Notebooks
 
