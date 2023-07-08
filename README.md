@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the repository for Lab 1 for [BEE 4750](https://viveks.me/simulation-data-analysis), taught at [Cornell University](https://cornell.edu) in Fall 2023 by [Vivek Srikrishnan](https://viveks.me).
+This is the repository for Lab 1 for [BEE 4750](https://viveks.me/environmental-systems-analysis), taught at [Cornell University](https://cornell.edu) in Fall 2023 by [Vivek Srikrishnan](https://viveks.me).
 
 If enrolled in the class, a PDF of the completed notebook, **with all cells evaluated**, should be submitted to Gradescope *no later* than Friday, September 1, 2023, at 9:00pm. 10% will be deducted for each day that the notebook is late.
 
@@ -35,14 +35,14 @@ This lab uses on the following packages:
 
 ## Prerequisites
 
-1. [Install Julia](https://julialang.org/downloads/) before beginning this lab. This notebook was developed with version 1.8.3, but any 1.8.x should work (there could be some issues with other versions, depending on what's changed).
+1. [Install Julia](https://julialang.org/downloads/) before beginning this lab. This notebook was developed with version 1.9.2, but any 1.9.x should work (there could be some issues with other versions, depending on what's changed).
 2. If necessary, [install git](https://happygitwithr.com/install-git.html) and [create a GitHub account](https://github.com). 
-3. [Clone the repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository). I recommend doing this in a dedicated `BEE4850/` folder, which can also house homework assignment repositories and lecture notes. You can clone directly into the `BEE4850/` folder.   For Windows (or from another graphical interface), just create a `BEE4850` folder, then a `labs` folder inside of that, then clone into that folder. Or to clone into a `BEE4850/labs` folder, from a command prompt:
+3. [Clone the repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository). I recommend doing this in a dedicated `BEE4750/` folder, which can also house homework assignment repositories and lecture notes. You can clone directly into the `BEE4750/` folder.   For Windows (or from another graphical interface), just create a `BEE4750` folder, then a `labs` folder inside of that, then clone into that folder. Or to clone into a `BEE4750/labs` folder, from a command prompt:
     ```bash
-    cd BEE4850/
+    cd BEE4750/
     mkdir labs
     cd labs/
-    git clone https://github.com/BEE4850/lab01.git
+    git clone https://github.com/BEE4750/lab01.git
     ```
 
 ## Opening The Notebook
@@ -54,8 +54,8 @@ This lab uses on the following packages:
   - If you installed VS Code, you should be able to just open `lab01.ipynb` and everything should just work. 
   - If you're using a different IDE, Google how to make sure that it is set up to run a Julia notebook.
   - If you want to use `IJulia.jl`, open a Julia prompt. You can do this by:
-    - Using the `Julia-1.8` or equivalent graphical program, type `cd("BEE4850/labs")` or whatever path points to your lab notebook folder;
-    - Navigating to your `BEE4850/labs/lab01` folder and typing `julia` to open the prompt.Then:
+    - Using the `Julia-1.9` or equivalent graphical program, type `cd("BEE4750/labs")` or whatever path points to your lab notebook folder;
+    - Navigating to your `BEE4750/labs/lab01` folder and typing `julia` to open the prompt.Then:
     
       ```julia
       import Pkg
